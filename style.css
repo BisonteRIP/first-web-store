@@ -15,21 +15,58 @@ header{
     height: 60px;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
+header div{
+    display: flex;
+    align-items: center;
+}
 .logo-principal{
     width: 150px;
+    cursor: pointer;
 }
 .search-menu{
     border: none;
     background-color: #F0F0F0;
     border-radius: 20px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: kanit, sans-serif;
+    color: #3a3a3a;
     height: 40px;
-    width: 300px;
+    width: 400px;
     padding: 0 0 0 50px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 20px;
+    font-family: kanit, sans-serif;
+    color: #3a3a3a;
+    font-size: 16px;
+    margin: 0 5px;
+    border: solid 0.5px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+.menu-button:hover{
+    background-color: #f0f0f0;
+}
+.icon-container{
+    margin: 0 0 0 20px;
 }
 .icon-menu{
     width: 30px;
     height: auto;
+    margin: 0 4px;
+    fill: red;
+    cursor: pointer;
+}
+.icon-shop{
+    width: 27px;
+}
+.icon-search{
+    position: absolute;
+    margin: 0 0 0 15px;
 }
