@@ -80,33 +80,62 @@ header div{
 .dropdown-content{
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     position: absolute;
     font-size: 18px;
     background: #f9f9f9;
     min-width: 200px;
     z-index: 1;
-    height: 300px;
-    padding: 10px 20px;
+    height: 225px;
+    padding: 0 0 0 0;
     border-radius: 5px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    top: 50px;
+    top: 52px;
     right: -2px;
 }
 .dropdown-link{
     text-decoration: none;
     font-family: kanit, sans-serif;
     color: #3a3a3a;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    width: 16vw;
+    margin: 0 10px;
+    padding: 5px 5px;
     
+}
+.first-link{
+    border-top: none;
+}
+.last-link{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+.dropdown-link:hover{
+    background-color: #e7e7e7;
 }
 .space-void{
     position: absolute;
     overflow: hidden;
     top: 0;
-    height: 50px;
+    height: 52px;
     width:100%;
 }
 .dropdown-menu:hover .dropdown-content {
-  display: flex;  
+  display: flex;
+}
+.container-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 16vw;
+}
+.icon-social-media{
+    width: 34px;
+    margin: 10px 3px 0 3px;
+    transition: width 0.1s ease-in-out;
+    cursor: pointer;
+}
+.icon-social-media:hover{
+    width: 36px;
 }
