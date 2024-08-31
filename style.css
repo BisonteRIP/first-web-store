@@ -19,6 +19,12 @@ header div{
     display: flex;
     align-items: center;
 }
+button{
+    cursor: pointer;
+}
+.container{
+    margin: 0 5% 0 5%;
+}
 .logo-principal{
     width: 150px;
     cursor: pointer;
@@ -37,6 +43,7 @@ header div{
 }
 
 .menu-button{
+    background-color: #fff;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
@@ -48,7 +55,7 @@ header div{
     font-size: 16px;
     margin: 0 5px;
     border: solid 0.5px rgba(0, 0, 0, 0.075);
-    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 .menu-button:hover{
     background-color: #f0f0f0;
@@ -138,4 +145,73 @@ header div{
 }
 .icon-social-media:hover{
     width: 36px;
+}
+
+/* -------------  MAIN  ------------- */
+.main-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 50px 0 0 0;
+}
+.first-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -10;
+    height: 500px;
+    width: 95%;
+    max-width: 750px;
+    background-color: #3A72FF;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px 1px rgba(58, 114, 255, 0.7);
+
+}
+.first-content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    z-index: -10;
+    position: absolute;
+    width: 500px;
+    opacity: 0.4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.first-content-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: kanit, sans-serif;
+    color: #F0F0F0;
+    line-height: 1;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.first-content-button{
+    font-family: kanit, sans-serif;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    background: none;
+    color: #F0F0F0;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+    margin-top: -160px;
+}
+.second-content{
+    display: grid;
+    align-items: end;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+}
+.polygon{
+    background-color: #3A72FF;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    clip-path: polygon(0 53%, 100% 0%, 100% 100%, 0% 100%);
 }
